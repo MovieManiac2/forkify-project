@@ -1,5 +1,4 @@
 import icons from 'url:../../img/icons.svg';
-import { Fraction } from '../../../node_modules/fractional/array_mixins';
 
 export default class View {
   _data;
