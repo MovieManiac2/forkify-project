@@ -1,5 +1,4 @@
 import { API_URL, RES_PER_PAGE, KEY } from './config.js';
-// import { getJSON, sendJSON } from './helpers.js';
 import { AJAX } from './helpers.js';
 
 export const state = {
@@ -15,7 +14,6 @@ export const state = {
 
 const createRecipeObject = function (data) {
   const { recipe } = data.data;
-  // console.log(data);
   return {
     id: recipe.id,
     title: recipe.title,

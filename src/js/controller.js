@@ -7,14 +7,8 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 
-import '../../node_modules/core-js/stable';
-import '../../node_modules/regenerator-runtime';
-import resultsView from './views/resultsView.js';
-import recipe from '../js/model.js';
-
-if (module.hot) {
-  module.hot.accept();
-}
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 const controlRecipes = async function () {
   try {
