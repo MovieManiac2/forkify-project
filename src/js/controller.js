@@ -16,15 +16,11 @@ if (module.hot) {
   module.hot.accept();
 }
 
-// https://forkify-api.herokuapp.com/v2
-
-///////////////////////////////////////
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
-    if (!id) return;
 
+    if (!id) return;
     recipeView.renderSpinner();
 
     // 0) Update results view to mark selected search results
@@ -36,9 +32,9 @@ const controlRecipes = async function () {
 
     // 2(Rendering recipe
     recipeView.render(model.state.recipe);
-    // controlServings();
   } catch (err) {
     recipeView.renderError();
+    console.log(err);
   }
 };
 

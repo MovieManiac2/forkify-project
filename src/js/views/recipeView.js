@@ -1,7 +1,7 @@
 import view from './view';
 
 import icons from 'url:../../img/icons.svg';
-import { FRACTION } from '../../../node_modules/fractional/array_mixins';
+import { Fraction } from 'fractional';
 
 class RecipeView extends view {
   _parentElement = document.querySelector('.recipe');
@@ -31,6 +31,8 @@ class RecipeView extends view {
   }
 
   _generateMarkup() {
+    console.log(this._data);
+
     return `
     <figure class="recipe__fig">
     <img src="${this._data.image}" alt="${

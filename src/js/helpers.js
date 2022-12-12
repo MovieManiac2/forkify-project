@@ -10,10 +10,6 @@ const timeout = function (s) {
 
 export const AJAX = async function (url, uploadData = undefined) {
   try {
-    const newFeature = function () {
-      console.log('a Welcome to the application!');
-    };
-    newFeature();
     const fetchPro = uploadData
       ? fetch(url, {
           method: 'POST',
